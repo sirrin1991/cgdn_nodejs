@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var student_management_1 = require("./student_management");
+var student_1 = require("./student");
+var studentManagement = new student_management_1.StudentManagement();
+var student = new student_1.Student("CongNT", 8);
+var student2 = new student_1.Student("SonPM", 10);
+var student3 = new student_1.Student("QuangNN", 9);
+studentManagement.insertLast(student);
+studentManagement.insertLast(student2);
+studentManagement.insertLast(student3);
+studentManagement.showList();
+console.log(studentManagement.getListStudentMaxScore());
